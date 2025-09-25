@@ -2,9 +2,7 @@ from typing import Any
 
 def torre_hanoi(n: int, origen: str, destino: str, auxiliar: str) -> int:
     """
-    Resuelve el problema de la Torre de Hanoi de forma estrictamente recursiva.
-    
-    Args:
+
         n (int): Número de discos.
         origen (str): Torre de origen.
         destino (str): Torre de destino.

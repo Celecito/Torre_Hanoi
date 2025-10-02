@@ -1,6 +1,6 @@
-from typing import Any
 
-def torre_hanoi(n: int, origen: str, destino: str, auxiliar: str) -> int:
+
+def torre_hanoi(n: int, origen: str, destino: str, auxiliar: str):
     """
 
         n (int): Número de discos.
@@ -20,7 +20,7 @@ def torre_hanoi(n: int, origen: str, destino: str, auxiliar: str) -> int:
     movimientos += torre_hanoi(n-1, auxiliar, destino, origen)
     return movimientos
 
-def pedir_num_discos() -> int:
+def pedir_num_discos():
     """
     Solicita al usuario el número de discos y valida la entrada.
     
@@ -31,7 +31,7 @@ def pedir_num_discos() -> int:
     """
     while True:
         try:
-            entrada: Any = input("Ingrese el número de discos (1-20): ")
+            entrada = input("Ingrese el número de discos (1-20): ")
             num_discos = int(entrada)
             if not (1 <= num_discos <= 20):
                 raise ValueError("El número debe estar entre 1 y 20.")
